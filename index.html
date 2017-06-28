@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet" />    
+</head>
+<body>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Add Task...">
+  <!-- <span onclick="newElement()" class="addBtn">Add</span> -->
+</div>
+<br />
+    
+<span id="myButtons" class="">
+    <input type="button" id="selectAllCheckBox" value="Select All" />
+    <input type="button" id="deleteSelectedItems" value="Delete Selected Items"  />
+    <input type="button" id="undoAction" value="Undo"  />
+    <input type="button" id="sortByDate" value="Sort"  />
+    <input type="button" id="resetData" value="RESET" />
+</span>
+
+    <br /> <br />
+    <ul id="myUL"></ul>
+    
+<script src="MyTaskList.js"></script>
+    
+<script>
+    new ToDoList().init();
+</script>
+    
+</body>
+</html>

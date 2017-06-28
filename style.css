@@ -1,0 +1,149 @@
+body {
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  align: center;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #6CFA77;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Style the delete button */
+.delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  cursor:pointer;
+  color:blue;
+  text-decoration:underline;
+}
+
+/* Style the header */
+.header {
+ background-color: #484848;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+#myInput {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.checkBoxSpan {
+    display: inline-block;
+    padding-right: 20%;    
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked {
+    background:url(check_radio_sheet.png) -19px top no-repeat;
+}
+
+#myButtons : {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+}
+
+#selectAllCheckBox: {
+   margin-right: 5%;
+   width: 30% !important;    
+    background-color: #bbb;
+    font-size: 16px;
+    border: none;
+}
+
+#deleteSelectedItems: {
+    width: 30%;
+    margin-right: 5%;
+}
+
+#resetData: {
+    width: 30%;
+    display: inline-block;
+}
